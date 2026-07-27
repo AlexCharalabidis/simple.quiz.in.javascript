@@ -1,6 +1,6 @@
 
-	total_true_false_questions = 2;
+	total_binary_questions = 2;
 	questions_true_false = [
-		{"text":"This is a test true or false question","type":"binary","answers":[],"correct":0,"binary":true},
-		{"text":"This is a third test true or false question","type":"binary","answers":[],"correct":0,"binary":false}
+		{"text":"This is a test true or false question","type":"binary","answers":[],"correct":0,"binary":1},
+		{"text":"This is a another test true or false question","type":"binary","answers":[],"correct":0,"binary":0}
 	];

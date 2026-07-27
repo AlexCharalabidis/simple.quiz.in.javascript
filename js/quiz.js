@@ -80,7 +80,7 @@ function start_game(){
 	document.getElementById("selection2").style.display = "block";
 }
 
-function question_loop(){
+function mult_question_loop(){
 		for (let k = 0; k < 3; k++){
 		 		let a = "answer" + (k + 1);
 		 		document.getElementById(a).style.backgroundColor = "white";
@@ -111,6 +111,30 @@ function question_loop(){
 		}
 	}
 
+function binary_question_loop(){
+		document.getElementById("ans1").style.backgroundColor = "white";
+		document.getElementById("ans0").style.backgroundColor = "white";
+		if (i < max){
+		 	let quest = new question();
+		 	let numb = get_rand(total_binary_questions);
+		 	console.log(numb);
+		 	let content = questions_true_false[numb];
+		 	quest.set_question(content.text,content.type,content.answers,content.correct,content.binary);
+		 	document.getElementById("number2").innerText = "Question " + (i + 1);
+		 	document.getElementById("question_text2").innerText = quest.get_question_text();
+		 	corr = quest.get_binary();
+		 	game = 1;
+		 	i++;
+		} else {
+			document.getElementById("game_window2").style.display = "none";
+			document.getElementById("play_button").style.display = "block";
+			document.getElementById("total").style.display = "inline";
+			document.getElementById("total").innerText = "Total Questions: " + max;
+			document.getElementById("total").style.textAlign = "center";
+			document.getElementById("correct").style.textAlign = "center";
+		}
+	}
+
 function mult_game(){
 	total_ans = 0;
 	correct_ans = 0;
@@ -126,7 +150,25 @@ function mult_game(){
 	
 	i = 0;
 	max = (total_questions < 10)?total_questions:10;
-	question_loop();
+	mult_question_loop();
+}
+
+function binary_game(){
+	total_ans = 0;
+	correct_ans = 0;
+	let total_questions = total_binary_questions;
+	document.getElementById("total").innerText = "Total Questions: 0";
+	document.getElementById("correct").innerText = "Correct Answers: 0";
+	document.getElementById("correct").style.display = "inline";
+	document.getElementById("correct").style.textAlign = "left";
+	document.getElementById("total").style.textAlign = "left";
+	document.getElementById("game_window2").style.display = "table";
+	document.getElementById("selection1").style.display = "none";
+	document.getElementById("selection2").style.display = "none";
+	
+	i = 0;
+	max = (total_questions < 10)?total_questions:10;
+	binary_question_loop();
 }
 
 function select_answer(ans){
@@ -137,14 +179,34 @@ function select_answer(ans){
 			let str = "answer" + ans;
 			document.getElementById(str).style.backgroundColor = "green";
 			game = 0;
-			setTimeout(question_loop,5000);
+			setTimeout(mult_question_loop,5000);
 	 	} else {
 	 		let str = "answer" + corr;
 			document.getElementById(str).style.backgroundColor = "green";
 			str = "answer" + ans;
 			document.getElementById(str).style.backgroundColor = "red";
 			game = 0;
-			setTimeout(question_loop,5000);
+			setTimeout(mult_question_loop,5000);
+	 	}
+	}
+}
+
+function binary_answer(ans){
+	if (game == 1){
+	 	if (ans == corr){
+			correct_ans++;
+			document.getElementById("correct").innerText = "Correct Answers: " + correct_ans;
+			let str = "ans" + ans;
+			document.getElementById(str).style.backgroundColor = "green";
+			game = 0;
+			setTimeout(binary_question_loop,5000);
+	 	} else {
+	 		let str = "ans" + corr;
+			document.getElementById(str).style.backgroundColor = "green";
+			str = "ans" + ans;
+			document.getElementById(str).style.backgroundColor = "red";
+			game = 0;
+			setTimeout(binary_question_loop,5000);
 	 	}
 	}
 }

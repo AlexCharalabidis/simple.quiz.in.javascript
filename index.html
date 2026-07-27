@@ -81,7 +81,7 @@
 	
 	<button class="menu" id="play_button" onclick="start_game()">PLAY!</button>
 	<button class="menu" id="selection1" style="display: none;" onclick="mult_game()">Multiple Choice</button><br>
-	<button class="menu" id="selection2" style="display: none;">True Or False</button>
+	<button class="menu" id="selection2" style="display: none;" onclick="binary_game()">True Or False</button>
 	<br><br>
 	<table class="game_window" id="game_window" style="display: none">
 		<tr>
@@ -94,6 +94,18 @@
 			<td class="answer" id="answer1" onclick="select_answer(1)"></td>
 			<td class="answer" id="answer2" onclick="select_answer(2)"></td>
 			<td class="answer" id="answer3" onclick="select_answer(3)"></td>
+		</tr>
+	</table>
+	<table class="game_window" id="game_window2" style="display: none">
+		<tr>
+			<th id="number2" colspan="3">Question</th>
+		</tr>
+		<tr>
+			<td id="question_text2" colspan="3"></td>
+		</tr>
+		<tr>
+			<td class="answer" id="ans1" onclick="binary_answer(1)">True</td>
+			<td class="answer" id="ans0" onclick="binary_answer(0)">False</td>
 		</tr>
 	</table>
 </body>

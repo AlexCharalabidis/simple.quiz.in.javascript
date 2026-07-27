@@ -1,19 +1,19 @@
 
 	total_mult_questions = 14;
 	questions_multiple_choice = [	
-		{"text":"A male duck is properly known as what?","type":"answer","answers":["A Duck","A Drake","A Goose"],"correct":2,"binary":true},
-		{"text":"Which element appears seventh on the periodic table?","type":"answer","answers":["Nitrogen","Oxygen","Carbon"],"correct":1,"binary":true},
-		{"text":"Somniphobia is the fear of what?","type":"answer","answers":["The Sun","Same Things","Sleep"],"correct":3,"binary":true},
-		{"text":"What was a side effect of the prehistoric humans’ diet?","type":"answer","answers":["Good Dental Health","Less Hair Loss","Strong Digestion System"],"correct":1,"binary":true},
-		{"text":"What plant does the vanilla bean come from?","type":"answer","answers":["Lily","Orchid","Freesia"],"correct":2,"binary":true},
-		{"text":"A 'Panatela' is a type of what?","type":"answer","answers":["Baked Food","Festival","Cigar"],"correct":3,"binary":true},
-		{"text":"What city was Russia's capital before Moscow?","type":"answer","answers":["St. Petersburg","Kazan","Krasnodar"],"correct":1,"binary":true},
-		{"text":"What figure in Greek mythology was tricked into holding the sky?","type":"answer","answers":["Uranus","Atlas","Eos"],"correct":2,"binary":true},
-		{"text":"What is the second-largest Portuguese-speaking nation in population and area?","type":"answer","answers":["Portugal","Mozambique","Angola"],"correct":3,"binary":true},
-		{"text":"In Scrabble, what is the value of the letter “Q”?","type":"answer","answers":["4 Points","10 Points","5 Points"],"correct":2,"binary":true},
-		{"text":"What does Lilo give Stitch to drink in a baby bottle?","type":"answer","answers":["Coffee","Milk","Water"],"correct":1,"binary":true},
-		{"text":"What color appears in the middle of a rainbow?","type":"answer","answers":["Green","Yellow","Blue"],"correct":1,"binary":true},
-		{"text":"What type of instrument is a Celesta?","type":"answer","answers":["Keyboard","String","Percussion"],"correct":1,"binary":true},
-		{"text":"What does the Latin root word for 'trivia' refer to?","type":"answer","answers":["Information","Questions","Crossroads"],"correct":3,"binary":true},
+		{"text":"A male duck is properly known as what?","type":"answer","answers":["A Duck","A Drake","A Goose"],"correct":2,"binary":1},
+		{"text":"Which element appears seventh on the periodic table?","type":"answer","answers":["Nitrogen","Oxygen","Carbon"],"correct":1,"binary":1},
+		{"text":"Somniphobia is the fear of what?","type":"answer","answers":["The Sun","Same Things","Sleep"],"correct":3,"binary":1},
+		{"text":"What was a side effect of the prehistoric humans’ diet?","type":"answer","answers":["Good Dental Health","Less Hair Loss","Strong Digestion System"],"correct":1,"binary":1},
+		{"text":"What plant does the vanilla bean come from?","type":"answer","answers":["Lily","Orchid","Freesia"],"correct":2,"binary":1},
+		{"text":"A 'Panatela' is a type of what?","type":"answer","answers":["Baked Food","Festival","Cigar"],"correct":3,"binary":1},
+		{"text":"What city was Russia's capital before Moscow?","type":"answer","answers":["St. Petersburg","Kazan","Krasnodar"],"correct":1,"binary":1},
+		{"text":"What figure in Greek mythology was tricked into holding the sky?","type":"answer","answers":["Uranus","Atlas","Eos"],"correct":2,"binary":1},
+		{"text":"What is the second-largest Portuguese-speaking nation in population and area?","type":"answer","answers":["Portugal","Mozambique","Angola"],"correct":3,"binary":1},
+		{"text":"In Scrabble, what is the value of the letter “Q”?","type":"answer","answers":["4 Points","10 Points","5 Points"],"correct":2,"binary":1},
+		{"text":"What does Lilo give Stitch to drink in a baby bottle?","type":"answer","answers":["Coffee","Milk","Water"],"correct":1,"binary":1},
+		{"text":"What color appears in the middle of a rainbow?","type":"answer","answers":["Green","Yellow","Blue"],"correct":1,"binary":1},
+		{"text":"What type of instrument is a Celesta?","type":"answer","answers":["Keyboard","String","Percussion"],"correct":1,"binary":1},
+		{"text":"What does the Latin root word for 'trivia' refer to?","type":"answer","answers":["Information","Questions","Crossroads"],"correct":3,"binary":1},
 	];
 	
